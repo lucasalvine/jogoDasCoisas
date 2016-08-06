@@ -132,7 +132,7 @@ document.getElementById("resetBtn").innerHTML = "processing...";
 <body>
    <div style="width:700px;margin-left:auto;margin-right:auto;text-align:center;">
    <p style="color:#06F;"><?php echo $msg; ?></p>
-	<h2>Que tipo de pergunta vamos criar?</h2>
+	<h2>Cadastre uma(s) pergunta(s)!</h2>
     <button class="btn btn-primary" onClick="showDiv('tf', 'mc')">Verdadeiro/Falso</button>&nbsp;&nbsp;
     <span id="resetBtn">
     <button class="btn btn-waring" onclick="resetQuiz()">Novo Questionario</button></span>
