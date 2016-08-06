@@ -35,7 +35,7 @@ if(isset($_POST['desc'])){
 	$sql = mysql_query("INSERT INTO questions (question, type) VALUES ('$question', '$type')")or die(mysql_error());
 		$lastId = mysql_insert_id();
 		mysql_query("UPDATE questions SET question_id='$lastId' WHERE id='$lastId' LIMIT 1")or die(mysql_error());
-	//// Update answers based on which is correct //////////
+	
 	if($type == 'tf'){
 		if($isCorrect == "answer1"){
 		$sql2 = mysql_query("INSERT INTO answers (question_id, answer, correct) VALUES ('$lastId', '$answer1', '1')")or die(mysql_error());
