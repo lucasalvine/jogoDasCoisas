@@ -2,11 +2,11 @@
 
 if(isset($_POST['desc'])){
 	if(!isset($_POST['iscorrect']) || $_POST['iscorrect'] == ""){
-		echo "Sorry, important data to submit your question is missing. Please press back in your browser and try again and make sure you select a correct answer for the question.";
+		echo "Por favor, preencha todos os campos da pagina anterior";
 		exit();
 	}
 	if(!isset($_POST['type']) || $_POST['type'] == ""){
-		echo "Sorry, there was an error parsing the form. Please press back in your browser and try again";
+		echo "Desculpe, algo de errado aconteceu, tente adicionar a pergunta novamente";
 		exit();
 	}
 	require_once("scripts/conexao.php");
